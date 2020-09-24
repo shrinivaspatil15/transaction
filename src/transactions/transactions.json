@@ -1,0 +1,37 @@
+[
+    {
+        "from":"John Doe",
+        "to":"Alex Botez",
+        "amount":10000,
+        "bank":"SBI",
+        "status":true
+    },
+    {
+        "from":"Carry Doe",
+        "to":"Alex Botez",
+        "amount":5000,
+        "bank":"SBI",
+        "status":true
+    },
+    {
+        "from":"Ram Yadav",
+        "to":"Jethalal Gada",
+        "amount":15000,
+        "bank":"BOB",
+        "status":false
+    },
+    {
+        "from":"Aditya Kawale",
+        "to":"Atharv Deshmukh",
+        "amount":6000,
+        "bank":"HDFC",
+        "status": true
+    },
+    {
+        "from":"Mahindra",
+        "to":"Badakh",
+        "amount":7000,
+        "bank":"ICICI",
+        "status": false
+    } 
+]
