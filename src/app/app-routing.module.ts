@@ -1,14 +1,10 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { pathToFileURL } from 'url';
+
 
 const routes: Routes = [
   
-  {
-    path: '',
-    redirectTo: 'login',
-    pathMatch: 'full'
-  },
+  
   {
     path: 'login',
     loadChildren: () => import('../login/login.module').then( m => m.LoginPageModule)
@@ -24,6 +20,10 @@ const routes: Routes = [
   {
     path:'transaction',
     loadChildren: () => import('../transactions/transaction.module').then( m => m.TransactionPageModule)
+  },
+  {
+    path:'finger',
+    loadChildren: ()=>import('../finger/finger.module').then(m=>m.FingerPageModule)
   },
   {
     path: '**',
