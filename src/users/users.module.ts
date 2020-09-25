@@ -1,17 +1,16 @@
-import { FingerPageRoutingModule } from './finger-routing.module';
-import { FingerPage } from './finger.page';
+import { UsersPage } from './users.page';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { UsersPageRoutingModule } from './users-routing.module';
 @NgModule({
     imports:[
         CommonModule,
         FormsModule,
         IonicModule,
-        FingerPageRoutingModule
+        UsersPageRoutingModule
     ],
-    exports:[],
-    declarations:[FingerPage]
+    declarations:[UsersPage]
 })
-export class FingerPageModule{}
+export class UsersPageModule{}

@@ -1,11 +1,13 @@
 <ion-header [translucent]="true">
     <ion-toolbar>
       <ion-title>
-        Finger Auth
+        Users
       </ion-title>
     </ion-toolbar>
   </ion-header>
   <ion-content>
-    ibuhybhbhgjiyhgbb
+    <div *ngFor="let user of users">
+      {{user.id}}{{user.name}}{{user.address.city}}{{user.address.street}}{{user.email}}
+    </div>
   </ion-content> 
   

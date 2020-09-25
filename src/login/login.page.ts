@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class LoginPage{
     constructor(){
-        console.log("test")
+       
     }
 }
 
