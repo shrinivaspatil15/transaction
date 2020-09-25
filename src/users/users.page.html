@@ -6,8 +6,24 @@
     </ion-toolbar>
   </ion-header>
   <ion-content>
-    <div *ngFor="let user of users">
-      {{user.id}}{{user.name}}{{user.address.city}}{{user.address.street}}{{user.email}}
-    </div>
+    
+      <ion-card *ngFor="let user of users">
+        <ion-row>
+          <ion-col size="3">
+            <ion-icon name="person-circle" style="zoom:7.0;"></ion-icon>
+          </ion-col>
+          <ion-col size="5">
+            <ion-card-header>
+              <ion-card-subtitle>ID: {{user.id}}</ion-card-subtitle>
+              <ion-card-title>Name: {{user.name}}</ion-card-title>
+            </ion-card-header>
+          </ion-col>
+          <ion-col size="4">
+            <ion-card-subtitle>Address: City- {{user.address.city}} Street- {{user.address.street}}</ion-card-subtitle>
+            <ion-card-subtitle>E-Mail: {{user.email}}</ion-card-subtitle>
+          </ion-col>
+          
+        </ion-row>
+      </ion-card>
   </ion-content> 
   
