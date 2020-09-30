@@ -1,3 +1,4 @@
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { UserService } from './user.service';
 import { NgModule } from '@angular/core';
@@ -14,7 +15,12 @@ import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, 
+            IonicModule.forRoot(),
+            AppRoutingModule, 
+            HttpClientModule, 
+            ReactiveFormsModule
+        ],
   providers: [
     StatusBar,
     SplashScreen,

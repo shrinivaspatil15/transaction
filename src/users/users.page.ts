@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsersPage implements OnInit{
     public users=[];
-    constructor(private _UserService: UserService){}
+    constructor(private _UserService: UserService){
+    }
     ngOnInit(){
-        this._UserService.getUsers().subscribe(data => this.users = data);
+        this._UserService.getUsers().subscribe(data => this.users = data);    
     }
 }
